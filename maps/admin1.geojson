@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cairo Governorate",
+        "country": "Egypt",
+        "capital": "Cairo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[31.18,30.00],[31.38,30.00],[31.38,30.18],[31.18,30.18],[31.18,30.00]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giza Governorate",
+        "country": "Egypt",
+        "capital": "Giza"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[30.95,29.85],[31.20,29.85],[31.20,30.10],[30.95,30.10],[30.95,29.85]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alexandria Governorate",
+        "country": "Egypt",
+        "capital": "Alexandria"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[29.75,31.10],[30.10,31.10],[30.10,31.35],[29.75,31.35],[29.75,31.10]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luxor Governorate",
+        "country": "Egypt",
+        "capital": "Luxor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[32.50,25.55],[32.75,25.55],[32.75,25.80],[32.50,25.80],[32.50,25.55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aswan Governorate",
+        "country": "Egypt",
+        "capital": "Aswan"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[32.75,23.95],[33.05,23.95],[33.05,24.25],[32.75,24.25],[32.75,23.95]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Said Governorate",
+        "country": "Egypt",
+        "capital": "Port Said"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[32.20,31.15],[32.40,31.15],[32.40,31.35],[32.20,31.35],[32.20,31.15]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suez Governorate",
+        "country": "Egypt",
+        "capital": "Suez"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[32.40,29.80],[32.70,29.80],[32.70,30.10],[32.40,30.10],[32.40,29.80]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riyadh Province",
+        "country": "Saudi Arabia",
+        "capital": "Riyadh"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[45.50,24.30],[47.50,24.30],[47.50,25.80],[45.50,25.80],[45.50,24.30]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Île-de-France",
+        "country": "France",
+        "capital": "Paris"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2.00,48.50],[2.70,48.50],[2.70,49.10],[2.00,49.10],[2.00,48.50]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo Prefecture",
+        "country": "Japan",
+        "capital": "Tokyo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[139.40,35.50],[139.95,35.50],[139.95,35.90],[139.40,35.90],[139.40,35.50]]]
+      }
+    }
+  ]
+}

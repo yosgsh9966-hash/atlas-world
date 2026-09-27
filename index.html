@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🌍 أطلس خرائط العالم | مشروع الصف الثاني الثانوي</title>
+
+<link rel="icon" href="images/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="header-container">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<span>أطلس خرائط العالم</span>
+
+</div>
+
+<button id="themeBtn" class="theme-btn" title="تغيير الوضع">
+
+🌙
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ================= WORLD BANNER ================= -->
+
+<section class="world-banner animate">
+
+<img src="images/world-banner.jpg" alt="World Banner">
+
+</section>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero animate">
+
+<img src="images/earth.png" alt="Earth" width="160">
+
+<h1>🌍 أطلس خرائط العالم التفاعلي</h1>
+
+<p>
+
+مشروع جغرافيا للصف الثاني الثانوي يعرض خريطة العالم بطريقة تفاعلية،
+ويتيح استكشاف الدول والعواصم والمدن والمحافظات والمعالم الجغرافية.
+
+</p>
+
+<div class="search-box">
+
+<input
+id="searchInput"
+type="text"
+placeholder="ابحث عن دولة أو مدينة (Egypt, Cairo, Paris...) ثم اضغط Enter">
+
+<span>🔍</span>
+
+</div>
+
+<button id="homeMap" class="home-btn">
+
+🌍 العودة إلى خريطة العالم
+
+</button>
+
+</section>
+
+<!-- ================= MAP ================= -->
+
+<section class="map-section animate">
+
+<div id="map"></div>
+
+<div class="map-legend">
+
+<span>🌊 المحيط الأطلسي</span>
+<span>🌊 المحيط الهادئ</span>
+<span>🌊 المحيط الهندي</span>
+<span>🌊 المحيط المتجمد الشمالي</span>
+<span>🌊 المحيط الجنوبي</span>
+
+</div>
+
+<p id="coords" class="coords">
+
+حرّك الماوس فوق الخريطة لإظهار الإحداثيات.
+
+</p>
+
+</section>
+
+<!-- ================= CONTINENTS ================= -->
+
+<section class="continents animate">
+
+<div class="continent-card" data-continent="asia">
+
+<img src="images/asia.png" alt="Asia">
+
+<h3>آسيا</h3>
+
+<p>أكبر قارات العالم.</p>
+
+</div>
+
+<div class="continent-card" data-continent="africa">
+
+<img src="images/africa.png" alt="Africa">
+
+<h3>أفريقيا</h3>
+
+<p>ثاني أكبر قارات العالم.</p>
+
+</div>
+
+<div class="continent-card" data-continent="europe">
+
+<img src="images/europe.png" alt="Europe">
+
+<h3>أوروبا</h3>
+
+<p>قارة الحضارات القديمة.</p>
+
+</div>
+
+<div class="continent-card" data-continent="northamerica">
+
+<img src="images/north-america.png" alt="North America">
+
+<h3>أمريكا الشمالية</h3>
+
+<p>تضم الولايات المتحدة وكندا.</p>
+
+</div>
+
+<div class="continent-card" data-continent="southamerica">
+
+<img src="images/south-america.png" alt="South America">
+
+<h3>أمريكا الجنوبية</h3>
+
+<p>موطن غابات الأمازون.</p>
+
+</div>
+
+<div class="continent-card" data-continent="australia">
+
+<img src="images/australia.png" alt="Australia">
+
+<h3>أستراليا وأوقيانوسيا</h3>
+
+<p>أصغر قارات العالم.</p>
+
+</div>
+
+<div class="continent-card" data-continent="antarctica">
+
+<img src="images/antarctica.png" alt="Antarctica">
+
+<h3>القارة القطبية الجنوبية</h3>
+
+<p>أبرد مكان على سطح الأرض.</p>
+
+</div>
+
+</section>
+
+<!-- ================= WORLD FACTS ================= -->
+
+<section class="stats animate">
+
+<div class="stat">
+
+<h2>7</h2>
+
+<p>قارات</p>
+
+</div>
+
+<div class="stat">
+
+<h2>200+</h2>
+
+<p>دولة</p>
+
+</div>
+
+<div class="stat">
+
+<h2>5</h2>
+
+<p>محيطات</p>
+
+</div>
+
+<div class="stat">
+
+<h2>24</h2>
+
+<p>منطقة زمنية</p>
+
+</div>
+
+</section>
+
+<!-- ================= INFO PANEL ================= -->
+
+<div id="infoPanel" class="info-panel">
+
+<button id="closePanel" class="close-panel">
+
+✕
+
+</button>
+
+<h2 id="countryName">
+
+الدولة
+
+</h2>
+
+<img id="flag" src="" alt="Flag" style="display:none;">
+
+<p id="capital"></p>
+
+<p id="continent"></p>
+
+<p class="info-note">
+
+اضغط على أي دولة لمعرفة معلوماتها.
+
+</p>
+
+</div>
+
+<!-- ================= EGYPT SECTION ================= -->
+
+<section class="hero animate">
+
+<img src="images/egypt-flag.png"
+alt="علم مصر"
+width="120"
+style="margin-bottom:18px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.35);">
+
+<h2>🇪🇬 معلومات سريعة عن مصر</h2>
+
+<p>
+
+العاصمة: القاهرة • القارة: أفريقيا •
+المساحة: 1,001,450 كم² •
+السكان: حوالي 110 مليون نسمة.
+
+</p>
+
+<div class="stats" style="margin-top:35px;">
+
+<div class="stat">
+
+<h2>القاهرة</h2>
+
+<p>العاصمة</p>
+
+</div>
+
+<div class="stat">
+
+<h2>النيل</h2>
+
+<p>أطول نهر في العالم</p>
+
+</div>
+
+<div class="stat">
+
+<h2>الأهرامات</h2>
+
+<p>أشهر معالم مصر</p>
+
+</div>
+
+<div class="stat">
+
+<h2>7,000+</h2>
+
+<p>سنة من الحضارة</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECT FEATURES ================= -->
+
+<section class="hero animate">
+
+<h2>✨ مميزات الأطلس</h2>
+
+<div class="stats" style="margin-top:35px;">
+
+<div class="stat">
+
+<h2>🗺️</h2>
+
+<p>خريطة عالم تفاعلية</p>
+
+</div>
+
+<div class="stat">
+
+<h2>🔍</h2>
+
+<p>بحث عن الدول والمدن</p>
+
+</div>
+
+<div class="stat">
+
+<h2>📍</h2>
+
+<p>عواصم ومدن كبرى</p>
+
+</div>
+
+<div class="stat">
+
+<h2>🌙</h2>
+
+<p>الوضع الليلي والفاتح</p>
+
+</div>
+
+<div class="stat">
+
+<h2>🇪🇬</h2>
+
+<p>تكبير تلقائي على مصر</p>
+
+</div>
+
+<div class="stat">
+
+<h2>🏛️</h2>
+
+<p>معالم القاهرة</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<img src="images/compass-small.png" alt="Compass" width="45">
+
+<p>
+
+مشروع جغرافيا - الصف الثاني الثانوي
+
+</p>
+
+<p>
+
+أطلس خرائط العالم التفاعلي باستخدام HTML وCSS وJavaScript وLeaflet.
+
+</p>
+
+<p style="margin-top:10px;font-size:14px;opacity:.8;">
+
+تم تصميم المشروع ليعمل محليًا أو على GitHub Pages.
+
+</p>
+
+</footer>
+
+<!-- ================= LEAFLET ================= -->
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- ================= MAIN SCRIPT ================= -->
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

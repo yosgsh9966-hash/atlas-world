@@ -1,0 +1,380 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cairo",
+        "country": "Egypt",
+        "type": "Capital",
+        "population": "22 Million"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.2357, 30.0444]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alexandria",
+        "country": "Egypt",
+        "type": "City",
+        "population": "5.5 Million"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [29.9187, 31.2001]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giza",
+        "country": "Egypt",
+        "type": "City",
+        "population": "9 Million"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [31.1313, 29.987]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luxor",
+        "country": "Egypt",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.6396, 25.6872]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aswan",
+        "country": "Egypt",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.8998, 24.0889]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Port Said",
+        "country": "Egypt",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.3019, 31.2653]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suez",
+        "country": "Egypt",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [32.5498, 29.9668]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [46.6753, 24.7136]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mecca",
+        "country": "Saudi Arabia",
+        "type": "Holy City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.8579, 21.3891]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dubai",
+        "country": "United Arab Emirates",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [55.2708, 25.2048]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baghdad",
+        "country": "Iraq",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [44.3661, 33.3152]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Damascus",
+        "country": "Syria",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.2765, 33.5138]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jerusalem",
+        "country": "Jerusalem",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [35.2137, 31.7683]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paris",
+        "country": "France",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.3522, 48.8566]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "London",
+        "country": "United Kingdom",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-0.1276, 51.5072]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berlin",
+        "country": "Germany",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.405, 52.52]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rome",
+        "country": "Italy",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.4964, 41.9028]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Moscow",
+        "country": "Russia",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [37.6173, 55.7558]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New York",
+        "country": "United States",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.006, 40.7128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Washington",
+        "country": "United States",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0369, 38.9072]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Angeles",
+        "country": "United States",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.2437, 34.0522]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Toronto",
+        "country": "Canada",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-79.3832, 43.6532]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brasilia",
+        "country": "Brazil",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-47.8825, -15.7942]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.1729, -22.9068]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buenos Aires",
+        "country": "Argentina",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-58.3816, -34.6037]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Town",
+        "country": "South Africa",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.4241, -33.9249]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nairobi",
+        "country": "Kenya",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [36.8219, -1.2921]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beijing",
+        "country": "China",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4074, 39.9042]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shanghai",
+        "country": "China",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.4737, 31.2304]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo",
+        "country": "Japan",
+        "type": "Capital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6917, 35.6895]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sydney",
+        "country": "Australia",
+        "type": "City"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [151.2093, -33.8688]
+      }
+    }
+  ]
+}
